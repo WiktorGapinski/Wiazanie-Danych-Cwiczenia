@@ -6,7 +6,17 @@
         xmlns:local="clr-namespace:Wiazanie_Danych_Produkt_Glowna_Aplikacja"
         mc:Ignorable="d"
         Title="Produkt" Height="220" Width="350">
-    <Grid>
-        
+    <Grid x:Name="gridProdukt">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
     </Grid>
 </Window>
