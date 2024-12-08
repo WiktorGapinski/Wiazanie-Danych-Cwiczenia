@@ -5,11 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Wiazanie_Danych"
         mc:Ignorable="d"
-        Title="MainWindow" Height="520" Width="800">
+        Title="Test wiązania danych" Height="200" Width="550">
     <Grid>
+
         <StackPanel>
             <Slider x:Name="rozmiarTekstu" Minimum="10" Value="15" Maximum="45"/>
-            <TextBlock FontSize="{Binding Value, ElementName=rozmiarTekstu}"><Run Text="Testujemy wiązanie danych"/></TextBlock>
+
+            <TextBlock FontSize="{Binding Value, ElementName=rozmiarTekstu}" Text="Testujemy wiązanie danych"/>
         </StackPanel>
     </Grid>
+
 </Window>

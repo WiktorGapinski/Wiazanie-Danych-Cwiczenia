@@ -20,5 +20,10 @@ namespace Wiazanie_Danych
         {
             InitializeComponent();
         }
+
+        private void cmbKolor_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
