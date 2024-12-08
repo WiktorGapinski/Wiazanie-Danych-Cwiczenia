@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Wiazanie_Danych_Produkt_Glowna_Aplikacja"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Produkt" Height="220" Width="350">
     <Grid>
-
+        
     </Grid>
 </Window>
