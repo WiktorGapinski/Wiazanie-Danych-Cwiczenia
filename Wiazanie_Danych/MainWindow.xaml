@@ -27,9 +27,9 @@
         <Label Content="Tekst" Grid.Row="2" Grid.Column="0"/>
         <TextBox x:Name="txtTekst" Grid.Row="2" Grid.ColumnSpan="2" Margin="98,0,152,1"/>
 
-        <TextBlock Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Margin="5"
-                   FontSize="{Binding Path=Value, ElementName=rozmiarTekstu}"
-                   Text="{Binding Path=Text, ElementName=txtTekst}"
-                   Foreground="{Binding Path=SelectedItem.Content, ElementName=cmbKolor}"/>
+        <TextBox Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Margin="5"
+                 FontSize="{Binding Path=Value, ElementName=rozmiarTekstu}"
+                 Text="{Binding Path=Text, ElementName=txtTekst, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                 Foreground="{Binding Path=SelectedItem.Content, ElementName=cmbKolor}"/>
     </Grid>
 </Window>
