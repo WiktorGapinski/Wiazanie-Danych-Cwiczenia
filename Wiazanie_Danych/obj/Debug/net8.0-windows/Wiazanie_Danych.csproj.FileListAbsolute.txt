@@ -6,7 +6,6 @@ C:\Users\wikto\source\repos\Wiazanie_Danych\bin\Debug\net8.0-windows\Wiazanie_Da
 C:\Users\wikto\source\repos\Wiazanie_Danych\obj\Debug\net8.0-windows\MainWindow.g.cs
 C:\Users\wikto\source\repos\Wiazanie_Danych\obj\Debug\net8.0-windows\App.g.cs
 C:\Users\wikto\source\repos\Wiazanie_Danych\obj\Debug\net8.0-windows\Wiazanie_Danych_MarkupCompile.cache
-C:\Users\wikto\source\repos\Wiazanie_Danych\obj\Debug\net8.0-windows\Wiazanie_Danych_MarkupCompile.lref
 C:\Users\wikto\source\repos\Wiazanie_Danych\obj\Debug\net8.0-windows\MainWindow.baml
 C:\Users\wikto\source\repos\Wiazanie_Danych\obj\Debug\net8.0-windows\Wiazanie_Danych.g.resources
 C:\Users\wikto\source\repos\Wiazanie_Danych\obj\Debug\net8.0-windows\Wiazanie_Danych.GeneratedMSBuildEditorConfig.editorconfig

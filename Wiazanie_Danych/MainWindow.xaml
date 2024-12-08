@@ -7,6 +7,7 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
@@ -18,16 +19,20 @@
         <Slider x:Name="rozmiarTekstu" Minimum="10" Value="15" Maximum="45" Grid.Row="0" Grid.Column="1"/>
 
         <Label Content="Kolor czcionki" Grid.Row="1" Grid.Column="0"/>
-        <ComboBox x:Name="cmbKolor" Grid.Row="1" Margin="98,0,292,5" Grid.ColumnSpan="2">
+        <ComboBox x:Name="cmbKolor" Grid.Row="1" Grid.Column="1" Margin="0,0,5,0">
             <ComboBoxItem Content="Black"/>
             <ComboBoxItem Content="Red"/>
             <ComboBoxItem Content="Green"/>
         </ComboBox>
 
-        <Label Content="Tekst" Grid.Row="2" Grid.Column="0"/>
-        <TextBox x:Name="txtTekst" Grid.Row="2" Grid.ColumnSpan="2" Margin="98,0,152,1"/>
+        <Label Content="Długość" Grid.Row="2" Grid.Column="0"/>
+        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" Margin="5,11,0,5"
+                   Text="{Binding StringFormat={} {0} znaków (znaki/znak), Path=Text.Length, ElementName=txtTekst}"/>
 
-        <TextBox Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Margin="5"
+        <Label Content="Tekst" Grid.Row="3" Grid.Column="0"/>
+        <TextBox x:Name="txtTekst" Grid.Row="3" Grid.Column="1" Margin="0,0,5,0"/>
+
+        <TextBox Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Margin="5"
                  FontSize="{Binding Path=Value, ElementName=rozmiarTekstu}"
                  Text="{Binding Path=Text, ElementName=txtTekst, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                  Foreground="{Binding Path=SelectedItem.Content, ElementName=cmbKolor}"/>
