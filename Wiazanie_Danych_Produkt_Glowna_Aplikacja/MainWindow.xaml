@@ -18,5 +18,19 @@
             <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
+
+        <Label Content="Symbol:" Grid.Row="0" Grid.Column="0" Margin="5"/>
+        <TextBox Grid.Row="0" Grid.Column="1" Margin="5" Text="{Binding Symbol}"/>
+
+        <Label Content="Nazwa:" Grid.Row="1" Grid.Column="0" Margin="5"/>
+        <TextBox Grid.Row="1" Grid.Column="1" Margin="5" Text="{Binding Nazwa}"/>
+
+        <Label Content="Liczba sztuk:" Grid.Row="2" Grid.Column="0" Margin="5"/>
+        <TextBox Grid.Row="2" Grid.Column="1" Margin="5" Text="{Binding LiczbaSztuk}"/>
+
+        <Label Content="Magazyn:" Grid.Row="3" Grid.Column="0" Margin="5"/>
+        <TextBox Grid.Row="3" Grid.Column="1" Margin="5" Text="{Binding Magazyn}"/>
+
+        <Button x:Name="btnPotwierdz" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" Margin="4" MinWidth="120" HorizontalAlignment="Center" Content="Potwierdź" Click="btnPotwierdz_Click"/>
     </Grid>
 </Window>
