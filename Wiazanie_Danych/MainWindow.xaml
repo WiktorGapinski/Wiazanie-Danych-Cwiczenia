@@ -29,6 +29,7 @@
 
         <TextBlock Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Margin="5"
                    FontSize="{Binding Path=Value, ElementName=rozmiarTekstu}"
-                   Text="{Binding Path=Text, ElementName=txtTekst}"/>
+                   Text="{Binding Path=Text, ElementName=txtTekst}"
+                   Foreground="{Binding Path=SelectedItem.Content, ElementName=cmbKolor}"/>
     </Grid>
 </Window>
