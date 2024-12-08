@@ -1,18 +1,30 @@
 ﻿<Window x:Class="Wiazanie_Danych.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Wiazanie_Danych"
-        mc:Ignorable="d"
-        Title="Test wiązania danych" Height="200" Width="550">
+        Title="Test wiązania danych" Height="300" Width="550">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
 
-        <StackPanel>
-            <Slider x:Name="rozmiarTekstu" Minimum="10" Value="15" Maximum="45"/>
+        <Label Content="Rozmiar czcionki" Grid.Row="0" Grid.Column="0"/>
+        <Slider x:Name="rozmiarTekstu" Minimum="10" Value="15" Maximum="45" Grid.Row="0" Grid.Column="1"/>
 
-            <TextBlock FontSize="{Binding Value, ElementName=rozmiarTekstu}" Text="Testujemy wiązanie danych"/>
-        </StackPanel>
+        <Label Content="Kolor czcionki" Grid.Row="1" Grid.Column="0"/>
+        <ComboBox x:Name="cmbKolor" Grid.Row="1" Margin="98,0,292,5" Grid.ColumnSpan="2">
+            <ComboBoxItem Content="Black"/>
+            <ComboBoxItem Content="Red"/>
+            <ComboBoxItem Content="Green"/>
+        </ComboBox>
+
+        <Label Content="Tekst" Grid.Row="2" Grid.Column="0"/>
+        <TextBox x:Name="txtTekst" Grid.Row="2" Grid.ColumnSpan="2" Margin="98,0,152,1"/>
     </Grid>
-
 </Window>
