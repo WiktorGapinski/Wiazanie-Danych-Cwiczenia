@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Wiazanie_Danych/1.0.0": {
+        "runtime": {
+          "Wiazanie_Danych.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Wiazanie_Danych/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
